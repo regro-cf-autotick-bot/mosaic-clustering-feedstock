@@ -1,5 +1,5 @@
 {% set name = "mosaic-clustering" %}
-{% set version = "0.2.2" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mosaic-clustering-{{ version }}.tar.gz
-  sha256: aa6b3342c517cf4f0bcf57f9d80e80108d54490cab6e7bba13e38ab28f0af4ce
+  sha256: 84cc6c3ce08e551939eac9b589e559f356a84398933d32b7fcad7930aaa619cf
 
 build:
   noarch: python
@@ -46,7 +46,7 @@ test:
 
 about:
   home: https://github.com/moldyn/MoSAIC
-  summary: 'Correlation based feature selection for molecular dynamics data'
+  summary: Correlation based feature selection for molecular dynamics data
   license: MIT
   license_file: LICENSE
   doc_url: https://moldyn.github.io/MoSAIC/
