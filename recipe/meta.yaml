@@ -1,5 +1,5 @@
 {% set name = "mosaic-clustering" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mosaic-clustering-{{ version }}.tar.gz
-  sha256: 84cc6c3ce08e551939eac9b589e559f356a84398933d32b7fcad7930aaa619cf
+  sha256: 27f8b7cbf1109b36c7728c8acaf48b60e8f42f4eb44b7bbdd6afce268b798544
 
 build:
   noarch: python
