@@ -1,5 +1,5 @@
 {% set name = "mosaic-clustering" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mosaic-clustering-{{ version }}.tar.gz
-  sha256: 84cc6c3ce08e551939eac9b589e559f356a84398933d32b7fcad7930aaa619cf
+  sha256: 27f8b7cbf1109b36c7728c8acaf48b60e8f42f4eb44b7bbdd6afce268b798544
 
 build:
   noarch: python
@@ -23,12 +23,13 @@ requirements:
   run:
     - beartype >=0.10.4
     - click >=7.0.0
-    - igraph
+    - decorit >=0.2.0
     - leidenalg >=0.8.0
     - numpy >=1.21.0
     - pandas
     - prettypyplot
     - python >=3.8
+    - python-igraph
     - scikit-learn
     - scikit-learn-extra
     - scipy
@@ -49,6 +50,14 @@ about:
   summary: Correlation based feature selection for molecular dynamics data
   license: MIT
   license_file: LICENSE
+  description: |
+    MoSAIC is an unsupervised method for correlation analysis which
+    automatically detects the collective motion in MD simulation data, while
+    simultaneously identifying uncorrelated coordinates as noise. Hence, it can
+    be used as a feature selection scheme for Markov state modeling or simply
+    to obtain a detailed picture of the key coordinates driving a biomolecular
+    process. It is based on the Leiden community detection algorithm which is
+    used to bring a correlation matrix in a block-diagonal form.
   doc_url: https://moldyn.github.io/MoSAIC/
 
 extra:
