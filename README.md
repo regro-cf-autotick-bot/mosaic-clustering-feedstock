@@ -1,11 +1,11 @@
-About mosaic-clustering
-=======================
+About mosaic-clustering-feedstock
+=================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mosaic-clustering-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/moldyn/MoSAIC
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mosaic-clustering-feedstock/blob/main/LICENSE.txt)
 
 Summary: Correlation based feature selection for molecular dynamics data
 

@@ -1,5 +1,5 @@
 {% set name = "mosaic-clustering" %}
-{% set version = "0.3.2" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mosaic-clustering-{{ version }}.tar.gz
-  sha256: 8e53dd99f97611c8f4866c6b269973eaead473abfd62200fcb7e1b6b8ad780da
+  sha256: 6454f2d68201731a7a4a66ee9fc0daf876dbf88ab977903b877ed364d145ccfa
 
 build:
   noarch: python
@@ -23,7 +23,6 @@ requirements:
   run:
     - beartype >=0.10.4
     - click >=7.0.0
-    - decorit >=0.2.0
     - leidenalg >=0.8.0
     - numpy >=1.21.0
     - pandas
@@ -34,7 +33,6 @@ requirements:
     - scikit-learn-extra
     - scipy
     - typing-extensions >=3.9.0
-    - umap-learn
 
 test:
   imports:
