@@ -23,7 +23,6 @@ requirements:
   run:
     - beartype >=0.10.4
     - click >=7.0.0
-    - decorit >=0.2.0
     - leidenalg >=0.8.0
     - numpy >=1.21.0
     - pandas
@@ -34,7 +33,6 @@ requirements:
     - scikit-learn-extra
     - scipy
     - typing-extensions >=3.9.0
-    - umap-learn
 
 test:
   imports:
