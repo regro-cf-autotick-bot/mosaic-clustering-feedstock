@@ -1,5 +1,5 @@
 {% set name = "mosaic-clustering" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mosaic-clustering-{{ version }}.tar.gz
-  sha256: 6454f2d68201731a7a4a66ee9fc0daf876dbf88ab977903b877ed364d145ccfa
+  sha256: 2666b025257808c411bd2521c8b0f7fc50e0b90103868a46f8c49ee9f1409ec7
 
 build:
   noarch: python
@@ -26,7 +26,7 @@ requirements:
     - leidenalg >=0.8.0
     - numpy >=1.21.0
     - pandas
-    - prettypyplot
+    - matplotlib-base >=3.5.0
     - python >=3.8
     - python-igraph
     - scikit-learn
