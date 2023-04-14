@@ -155,4 +155,5 @@ Feedstock Maintainers
 =====================
 
 * [@braniii](https://github.com/braniii/)
+* [@gegabo](https://github.com/gegabo/)
 
